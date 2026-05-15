@@ -1,21 +1,38 @@
+# <div align="center">City Landscape In Sight: A Crowdsourced Framework for Unlocking Urban-Scale Window View Perceptions from Real Estate Imagery</div>
+
 <div align="center">
 
-# City Landscape In Sight
+**[Chucai Peng](https://ual.sg/author/chucai-peng/)**<sup>1,2,†</sup>, **[Sijie Yang](https://sijie-yang.com)**<sup>1,3,†</sup>, **Ang Liu**<sup>4</sup>, **Yang Xiang**<sup>5</sup>, **Zhixiang Zhou**<sup>2</sup>, **[Filip Biljecki](https://filipbiljecki.com)**<sup>1,6,*</sup>
 
-**A Crowdsourced Framework for Unlocking Urban-Scale Window View Perceptions from Real Estate Imagery**
+<sup>1</sup> Department of Architecture, National University of Singapore  
+<sup>2</sup> College of Horticulture and Forestry Sciences, Huazhong Agricultural University, Wuhan, China  
+<sup>3</sup> School of Engineering and Applied Science, University of Pennsylvania, Philadelphia, USA  
+<sup>4</sup> Department of Political Science, Rutgers University, Newark, USA  
+<sup>5</sup> School of Arts and Communication, China University of Geosciences, Wuhan, China  
+<sup>6</sup> Department of Real Estate, National University of Singapore  
+<sup>†</sup> Co-first authors &nbsp;|&nbsp; <sup>*</sup> Corresponding author: filip@nus.edu.sg
 
-**Authors:** [Chucai Peng](https://ual.sg/author/chucai-peng/)†, [Sijie Yang](https://sijie-yang.com)†, Ang Liu, Yang Xiang, Zhixiang Zhou, [Filip Biljecki](https://filipbiljecki.com)*
+</div>
 
-by [Urban Analytics Lab](https://ual.sg), Department of Architecture, College of Design and Engineering, National University of Singapore
+<div align="center">
 
-(† co-first authors, * corresponding author)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+</div>
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+<img src="figures/DoA Logo.jpg" alt="DoA Logo" width="120"/>
+<img src="figures/UAL Logo.jpg" alt="UAL Logo" width="120"/>
+</div>
+<a href="https://ual.sg">Urban Analytics Lab</a> | National University of Singapore
 </div>
 
 ---
 
-
+<div align="center">
 <img src="figures/fig_abstract.jpg" width="800" alt="Abstract">
+</div>
 
 ## Overview
 
