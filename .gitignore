@@ -1,0 +1,12 @@
+perception_prediction/
+感知影响（回归）/
+数据处理与相关分析/
+*.tex
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
