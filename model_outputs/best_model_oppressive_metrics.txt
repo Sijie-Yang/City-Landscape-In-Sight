@@ -1,0 +1,12 @@
+Best Model Metrics (Epoch 8; selected by validation R²):
+Train - Loss: 0.4558, R2: 0.7986, MSE: 0.4591, MAE: 0.5297, RMSE: 0.6776
+Train - R2 Tolerance 2: 0.9782
+Validation - Loss: 0.5403, R2: 0.6480, MSE: 0.5344, MAE: 0.5438, RMSE: 0.7310
+Validation - R2 Tolerance 2: 0.9685
+Test - Loss: 0.5236, R2: 0.7473, MSE: 0.5308, MAE: 0.5964, RMSE: 0.7285
+Test - R2 Tolerance 2: 1.0000
+
+# K-fold CV (5 folds); checkpoint = fold 5 (highest fold test R²).
+# Fold-test R² mean±std: 0.6494±0.0584
+# Fold-test MSE mean±std: 0.7316±0.1385
+# Fold-test RMSE mean±std: 0.8522±0.0825

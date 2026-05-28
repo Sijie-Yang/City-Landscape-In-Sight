@@ -1,12 +1,57 @@
+# Legacy / local analysis (not part of public code_1–5 pipeline)
 perception_prediction/
 感知影响（回归）/
 数据处理与相关分析/
+SHAP2.ipynb
+adjustment.ipynb
+
+# Manuscript sources (not released with code)
 *.tex
+paper/
 
 # Python
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.venv/
+venv/
+.env
 
 # macOS
 .DS_Store
+
+# Notebook / editor backups
+*.corrupted.backup
+*~
+
+# Local scripts (see scripts/README.md when working locally)
+scripts/
+
+# Superseded originals (kept locally for reference)
+data/data_original_final.csv
+data/data_original_final_rescaled.csv
+data/perception_survey/raw_original/
+data/perception_survey/raw_original_27477/
+data/perception_survey/ranked_original/
+data/perception_survey/ranked_original_27477/
+data/perception_survey/PER_DIMENSION_RAW_ADJUSTED.md
+data/training_features_original/
+data/inference_images/
+data/inference_predictions/
+
+# Training WVI images (~862 MB; obtain separately or regenerate via Code 2)
+data/training_images/
+
+# Label-iteration archives (large; regenerate via scripts/run_auto_iteration.py)
+data/perception_survey/iteration_01/
+data/perception_survey/iteration_02/
+
+# Image pre-processing scratch dirs (Code 2)
+**/_work_masked/
+**/_work_masked_cut/
+
+# Legacy feature tables
+*.legacy
+
+# Trained weights (~94 MB each; retrain with Code 3 or obtain from release archive)
+model_outputs/*.pth
