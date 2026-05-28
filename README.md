@@ -118,16 +118,6 @@ Training writes `model_outputs/best_model_{dimension}.pth` (~94 MB each). These 
 | `data/inference_predictions/predictions_{dimension}.csv` | City-scale model outputs |
 | `data/training_images/WVI_Processed/` | 256 px masked + cropped training images |
 
-## Local-only files (`.gitignore`)
-
-The following are excluded from version control but may exist on your machine:
-
-- Superseded CSVs (`data_original_final*`, `*_original/` survey folders)
-- Label-iteration archives (`data/perception_survey/iteration_01/`, `iteration_02/`)
-- Pre-processing scratch dirs (`_work_masked/`, `_work_masked_cut/`)
-- Helper scripts in `scripts/`, legacy analysis folders, manuscript `.tex` sources
-- `model_outputs/*.pth` checkpoints (see above)
-
 ## License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
