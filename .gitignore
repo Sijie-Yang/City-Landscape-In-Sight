@@ -24,8 +24,11 @@ venv/
 *.corrupted.backup
 *~
 
-# Local scripts (see scripts/README.md when working locally)
-scripts/
+# Scripts: only Code 2 pre-processing helpers are tracked (see code_2 §1)
+scripts/*
+!scripts/masked.py
+!scripts/masked_cut.py
+!scripts/data_mini.py
 
 # Superseded originals (kept locally for reference)
 data/data_original_final.csv
@@ -53,5 +56,5 @@ data/perception_survey/iteration_02/
 # Legacy feature tables
 *.legacy
 
-# Trained weights (~94 MB each; retrain with Code 3 or obtain from release archive)
-model_outputs/*.pth
+# Trained weights (~94 MB each; retrain with Code 4 or obtain from release archive)
+model_outputs/**/*.pth

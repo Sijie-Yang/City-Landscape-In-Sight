@@ -1,0 +1,49 @@
+config,label,dimension,test_r2_mean,test_r2_std
+resnet50_only,ResNet-50 only,prefer,0.7158642185081581,0.031688294313662
+resnet50_only,ResNet-50 only,monotonous,0.4427385453492881,0.0527510506857873
+resnet50_only,ResNet-50 only,quiet,0.45993190550595,0.0916243759369388
+resnet50_only,ResNet-50 only,extensive,0.6477319179543328,0.065796767834445
+resnet50_only,ResNet-50 only,vivid,0.5904151474554418,0.0941869726856466
+resnet50_only,ResNet-50 only,oppressive,0.6361707208851267,0.0673154321819565
+semantic_only,Semantic + Floor (Ridge),prefer,0.6376542139783389,0.0179834106097512
+semantic_only,Semantic + Floor (Ridge),monotonous,0.256844089923374,0.08820772835238
+semantic_only,Semantic + Floor (Ridge),quiet,0.341657306847291,0.1506729227060304
+semantic_only,Semantic + Floor (Ridge),extensive,0.6302250199815991,0.0475455296246022
+semantic_only,Semantic + Floor (Ridge),vivid,0.3208495156349181,0.012125196482843
+semantic_only,Semantic + Floor (Ridge),oppressive,0.5523423420447681,0.0704406223225596
+colour_only,Colour + Floor (Ridge),prefer,0.5451507053093018,0.044453149027476
+colour_only,Colour + Floor (Ridge),monotonous,0.1714379680100836,0.1128597635225973
+colour_only,Colour + Floor (Ridge),quiet,0.1446169017501664,0.1331276401087892
+colour_only,Colour + Floor (Ridge),extensive,0.5275018845609251,0.052422847253418
+colour_only,Colour + Floor (Ridge),vivid,0.2344106949621716,0.0715672034126465
+colour_only,Colour + Floor (Ridge),oppressive,0.3735081165844535,0.0920600118526562
+semantic_colour,Semantic + Colour + Floor (Ridge),prefer,0.6617829323812959,0.0160805615020004
+semantic_colour,Semantic + Colour + Floor (Ridge),monotonous,0.2601062983737353,0.0911231762473728
+semantic_colour,Semantic + Colour + Floor (Ridge),quiet,0.3371771942396258,0.1575943319148683
+semantic_colour,Semantic + Colour + Floor (Ridge),extensive,0.6310560101469097,0.0540224411909733
+semantic_colour,Semantic + Colour + Floor (Ridge),vivid,0.3876769812441438,0.0431040603766898
+semantic_colour,Semantic + Colour + Floor (Ridge),oppressive,0.5739134337634149,0.0538326175153417
+resnet50_semantic,ResNet-50 + Semantic + Floor,prefer,0.7335996694650669,0.0201728217972764
+resnet50_semantic,ResNet-50 + Semantic + Floor,monotonous,0.4441379183455075,0.0395020027626989
+resnet50_semantic,ResNet-50 + Semantic + Floor,quiet,0.4755420705077351,0.0384045938771468
+resnet50_semantic,ResNet-50 + Semantic + Floor,extensive,0.6968731283357918,0.0441753921011596
+resnet50_semantic,ResNet-50 + Semantic + Floor,vivid,0.5924648073844118,0.0633414349751126
+resnet50_semantic,ResNet-50 + Semantic + Floor,oppressive,0.6274275387775631,0.0580040759919327
+resnet50_colour,ResNet-50 + Colour + Floor,prefer,0.7447625005138587,0.0213746574194739
+resnet50_colour,ResNet-50 + Colour + Floor,monotonous,0.4622914882064227,0.0755591008287269
+resnet50_colour,ResNet-50 + Colour + Floor,quiet,0.4661086373173318,0.0761948474712228
+resnet50_colour,ResNet-50 + Colour + Floor,extensive,0.6492929855569377,0.0316202372617461
+resnet50_colour,ResNet-50 + Colour + Floor,vivid,0.5595092239694534,0.1076659192517427
+resnet50_colour,ResNet-50 + Colour + Floor,oppressive,0.6406236505939283,0.040345523026178
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),prefer,0.7308404175192724,0.032109057632511
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),monotonous,0.4552648917514611,0.0649096875910347
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),quiet,0.4637834644602102,0.0724936386669744
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),extensive,0.7100218505247176,0.0275273475541883
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),vivid,0.599251453565461,0.0471751921038035
+resnet50_semantic_colour_no_floor,ResNet-50 + Semantic + Colour (no Floor),oppressive,0.6174701698169415,0.0825706488114208
+full,Full (ResNet-50 + Semantic + Colour + Floor),prefer,0.7482458080441339,0.0220687584691359
+full,Full (ResNet-50 + Semantic + Colour + Floor),monotonous,0.4905655584899978,0.0786576333639099
+full,Full (ResNet-50 + Semantic + Colour + Floor),quiet,0.5048443829985088,0.0609891967729467
+full,Full (ResNet-50 + Semantic + Colour + Floor),extensive,0.6896875970335966,0.0450401512000182
+full,Full (ResNet-50 + Semantic + Colour + Floor),vivid,0.561986940787283,0.0809733324710969
+full,Full (ResNet-50 + Semantic + Colour + Floor),oppressive,0.6434359691326572,0.096752039009428

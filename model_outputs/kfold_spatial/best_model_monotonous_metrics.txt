@@ -1,0 +1,10 @@
+Best Model Metrics (Epoch 27; selected by validation R²):
+Train - Loss: 0.3504, R2: 0.8415, MSE: 0.3526, MAE: 0.4717, RMSE: 0.5938
+Train - R2 Tolerance 2: 0.9817
+Validation - Loss: 0.8936, R2: 0.5691, MSE: 0.8936, MAE: 0.7428, RMSE: 0.9453
+Validation - R2 Tolerance 2: 0.9112
+Test - Loss: 0.7054, R2: 0.5600, MSE: 0.7041, MAE: 0.6650, RMSE: 0.8391
+Test - R2 Tolerance 2: 0.9412
+
+# spatial_block K-fold; checkpoint = fold 2 (best fold test R²).
+# split manifest: data/training_features/kfold_splits_spatial/kfold_split_monotonous.json
