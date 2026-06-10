@@ -1,66 +1,64 @@
 vif_set,feature,VIF,high_vif,dropped_reference
-all_23_predictors,WV_Sky,34745.68175171584,True,
-all_23_predictors,WV_Highrisebuilding,29447.60189356385,True,
-all_23_predictors,WV_Lowrisebuilding,1032.0546297167587,True,
-all_23_predictors,WV_Grass,281.15130957993705,True,
-all_23_predictors,WV_Hardground,594.726834491412,True,
-all_23_predictors,WV_Tree,6013.246590868153,True,
-all_23_predictors,WV_Water,79.34474425532143,True,
-all_23_predictors,WV_Railing,19438.5533549508,True,
-all_23_predictors,WV_Road,146.61085435503873,True,
-all_23_predictors,WV_Barrenland,83.9343004913577,True,
-all_23_predictors,WV_Buildinginterior,935498.552231171,True,
-all_23_predictors,LC_Water,15605.568871567584,True,
-all_23_predictors,LC_Trees,1226.1133347946784,True,
-all_23_predictors,LC_Crops,2172.5571109542584,True,
-all_23_predictors,LC_Built_Area,1999105.3906625262,True,
-all_23_predictors,LC_Bare_Ground,12.701260687489336,True,
-all_23_predictors,LC_Rangeland,4468.0785498808555,True,
-all_23_predictors,BD,56.20119267942487,True,
-all_23_predictors,FAR,119.92608026981328,True,
-all_23_predictors,BH,175.31183279244252,True,
-all_23_predictors,BH_SD,24.97623221623486,True,
-all_23_predictors,NDBI,17.885449068476124,True,
-all_23_predictors,NDVI,52.67719395194564,True,
-wv_compositional,WV_Highrisebuilding,4.2791158643078955,False,WV_Sky
-wv_compositional,WV_Lowrisebuilding,1.7212522434034452,False,WV_Sky
-wv_compositional,WV_Grass,1.3515582487202127,False,WV_Sky
-wv_compositional,WV_Hardground,1.9837102475414408,False,WV_Sky
-wv_compositional,WV_Tree,2.307947166198682,False,WV_Sky
-wv_compositional,WV_Water,1.071892969550942,False,WV_Sky
-wv_compositional,WV_Railing,5.431698786464736,True,WV_Sky
-wv_compositional,WV_Road,1.3320052215407157,False,WV_Sky
-wv_compositional,WV_Barrenland,1.0991282930482114,False,WV_Sky
-wv_compositional,WV_Buildinginterior,7.002477564219394,True,WV_Sky
-lc_compositional,LC_Trees,1.1369427799885443,False,LC_Water
-lc_compositional,LC_Crops,1.0830766705082542,False,LC_Water
-lc_compositional,LC_Built_Area,1.2359773809958163,False,LC_Water
-lc_compositional,LC_Bare_Ground,1.0387981620877818,False,LC_Water
-lc_compositional,LC_Rangeland,1.3392498133323607,False,LC_Water
-urban_form,BD,27.31925070343873,True,
-urban_form,FAR,69.67211481121635,True,
-urban_form,BH,98.62678574711563,True,
-urban_form,BH_SD,23.63732124713526,True,
-urban_form,NDBI,6.685100566689297,True,
-urban_form,NDVI,21.083370091643413,True,
-inference_reference_dropped,WV_Highrisebuilding,7.789690046586895,True,WV_Sky; LC_Water
-inference_reference_dropped,WV_Lowrisebuilding,2.2397758885912094,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Grass,1.3875073803312878,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Hardground,2.03174983008481,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Tree,2.8648860161427963,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Water,1.2299376038279568,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Railing,9.104763695099011,True,WV_Sky; LC_Water
-inference_reference_dropped,WV_Road,1.4429810093200748,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Barrenland,1.1567933866532376,False,WV_Sky; LC_Water
-inference_reference_dropped,WV_Buildinginterior,105.24193696043855,True,WV_Sky; LC_Water
-inference_reference_dropped,LC_Trees,1.563561475480477,False,WV_Sky; LC_Water
-inference_reference_dropped,LC_Crops,1.5113082728136835,False,WV_Sky; LC_Water
-inference_reference_dropped,LC_Built_Area,278.56381329803435,True,WV_Sky; LC_Water
-inference_reference_dropped,LC_Bare_Ground,1.0490742752882418,False,WV_Sky; LC_Water
-inference_reference_dropped,LC_Rangeland,2.112042349061512,False,WV_Sky; LC_Water
-inference_reference_dropped,BD,55.88502644946065,True,WV_Sky; LC_Water
-inference_reference_dropped,FAR,119.90287214718232,True,WV_Sky; LC_Water
-inference_reference_dropped,BH,174.85344428863394,True,WV_Sky; LC_Water
-inference_reference_dropped,BH_SD,24.93185759147331,True,WV_Sky; LC_Water
-inference_reference_dropped,NDBI,12.137718364021115,True,WV_Sky; LC_Water
-inference_reference_dropped,NDVI,48.10379223555433,True,WV_Sky; LC_Water
+all_23_predictors,WV_Sky,2093242.9897918687,True,
+all_23_predictors,WV_Highrisebuilding,2178873.302292051,True,
+all_23_predictors,WV_Lowrisebuilding,199459.67445809225,True,
+all_23_predictors,WV_Grass,71887.4482110992,True,
+all_23_predictors,WV_Hardground,102644.85702979175,True,
+all_23_predictors,WV_Tree,902563.7436126038,True,
+all_23_predictors,WV_Water,23343.967666747278,True,
+all_23_predictors,WV_Railing,969940.8641796715,True,
+all_23_predictors,WV_Road,36037.61363685262,True,
+all_23_predictors,WV_Barrenland,24272.836587281683,True,
+all_23_predictors,WV_Buildinginterior,5522937.902669144,True,
+all_23_predictors,LC_Water,12565.76002796925,True,
+all_23_predictors,LC_Trees,1140.667949866742,True,
+all_23_predictors,LC_Crops,2084.597212232932,True,
+all_23_predictors,LC_Built_Area,22902.660499985384,True,
+all_23_predictors,LC_Bare_Ground,12.620815538395508,True,
+all_23_predictors,LC_Rangeland,3476.2710670473557,True,
+all_23_predictors,BD,9.48695106796803,False,
+all_23_predictors,FAR,24.621131337512008,True,
+all_23_predictors,BH,23.351521337877642,True,
+all_23_predictors,BH_SD,6.995931704733041,False,
+all_23_predictors,NDBI,3.140666820696759,False,
+all_23_predictors,NDVI,2.2435714950266625,False,
+wv_compositional,WV_Sky,1.378275133177757,False,WV_Buildinginterior
+wv_compositional,WV_Highrisebuilding,1.3115411800663854,False,WV_Buildinginterior
+wv_compositional,WV_Lowrisebuilding,1.259230534311391,False,WV_Buildinginterior
+wv_compositional,WV_Grass,1.1097810833567283,False,WV_Buildinginterior
+wv_compositional,WV_Hardground,1.0950078752274137,False,WV_Buildinginterior
+wv_compositional,WV_Tree,1.2044183064975291,False,WV_Buildinginterior
+wv_compositional,WV_Water,1.0737740209450624,False,WV_Buildinginterior
+wv_compositional,WV_Railing,1.057485854365043,False,WV_Buildinginterior
+wv_compositional,WV_Road,1.108475185431876,False,WV_Buildinginterior
+wv_compositional,WV_Barrenland,1.0534111513100974,False,WV_Buildinginterior
+lc_compositional,LC_Water,1.0091390871837387,False,LC_Built_Area
+lc_compositional,LC_Trees,1.0629569531361325,False,LC_Built_Area
+lc_compositional,LC_Crops,1.0417509729073615,False,LC_Built_Area
+lc_compositional,LC_Bare_Ground,1.0302087457854454,False,LC_Built_Area
+lc_compositional,LC_Rangeland,1.0894185559106846,False,LC_Built_Area
+urban_form,BD,2.0706372003138322,False,FAR
+urban_form,BH,7.729158755984265,False,FAR
+urban_form,BH_SD,6.67926179293354,False,FAR
+urban_form,NDBI,1.5121104397372822,False,FAR
+urban_form,NDVI,1.078240388930878,False,FAR
+inference_reference_dropped,WV_Sky,1.400848281279334,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Highrisebuilding,1.365456892316742,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Lowrisebuilding,1.3224607371810169,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Grass,1.129775589503242,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Hardground,1.100649300875389,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Tree,1.2223322460850898,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Water,1.2152690529013135,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Railing,1.0717603416642034,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Road,1.1189601995000067,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,WV_Barrenland,1.06452356960466,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,LC_Water,2.9660964032870996,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,LC_Trees,1.2568420709339632,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,LC_Crops,1.188610506246078,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,LC_Bare_Ground,1.0467232904005153,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,LC_Rangeland,1.2873505696954628,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,BD,2.279885120240423,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,BH,8.483373037997737,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,BH_SD,6.910481026118613,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,NDBI,3.1206934726606006,False,WV_Buildinginterior; LC_Built_Area
+inference_reference_dropped,NDVI,2.229534607430792,False,WV_Buildinginterior; LC_Built_Area
