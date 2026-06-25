@@ -16,6 +16,8 @@
 
 <div align="center">
 
+[![arXiv](https://img.shields.io/badge/arXiv-2606.15198-b31b1b.svg)](https://arxiv.org/abs/2606.15198)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 </div>
