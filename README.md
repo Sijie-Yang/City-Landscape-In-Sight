@@ -132,6 +132,23 @@ To support reproducibility, the project is released across two repositories:
 - **Dataset repository on Hugging Face** — [`sijiey/City-Landscape-In-Sight`](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight) — the larger binary artefacts: the **processed window view images** (499 surveyed as individual files + masks; the 12,334 citywide as `inference_images/WVI_Processed.zip`) and the **trained model weights** for all six perceptual dimensions.
 - **Not redistributed** — the **raw** window view images (`WVI_Original`) obtained from the listing platform, owing to platform licensing restrictions. The Code 2 processing scripts regenerate the processed imagery from source.
 
+## Citation
+
+If you use this code, data, or models, please cite:
+
+Peng, C., Yang, S., Liu, A., Xiang, Y., Zhou, Z., & Biljecki, F. (2026). *City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery.* arXiv:2606.15198. https://arxiv.org/abs/2606.15198
+
+```bibtex
+@article{peng2026citylandscape,
+  title        = {City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery},
+  author       = {Peng, Chucai and Yang, Sijie and Liu, Ang and Xiang, Yang and Zhou, Zhixiang and Biljecki, Filip},
+  journal      = {arXiv preprint arXiv:2606.15198},
+  year         = {2026},
+  doi          = {10.48550/arXiv.2606.15198},
+  url          = {https://arxiv.org/abs/2606.15198}
+}
+```
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
