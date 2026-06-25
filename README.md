@@ -41,35 +41,36 @@ This repository contains the code and data for a crowdsourced framework that lev
 ## Repository structure
 
 ```
-├── code_1_wvi_perception_survey_results.ipynb        # Crowdsourced survey + TrueSkill ranking
-├── code_2_wvi_preprocess_visual_features.ipynb     # Mask/crop/resize + visual feature extraction
-├── code_3_wvi_dataset_sampling.ipynb               # Hexagon_ID & Complex_ID for spatial sampling
-├── code_4_wvi_perception_data_analytics.ipynb      # Urban-scale WVI perception analytics
-├── code_5_wvi_perception_model_train_predict.ipynb # ResNet-50 + tabular-features regression
-├── code_6_wvi_perception_inference_analytics.ipynb # Classical-regressor benchmark vs. deep model
-├── assets/                                         # Logos and abstract figure
+├── code_1_wvi_perception_survey_results.ipynb       # Crowdsourced survey + TrueSkill ranking
+├── code_2_wvi_preprocess_visual_features.ipynb      # Mask/crop/resize + visual feature extraction
+├── code_3_wvi_dataset_sampling.ipynb                # Hexagon_ID & Complex_ID for spatial sampling
+├── code_4_wvi_perception_model_train_predict.ipynb  # ResNet-50 + tabular regression; spatial K-fold CV; citywide inference
+├── code_5_wvi_perception_data_analytics.ipynb       # Urban-scale perception analytics (distribution, clustering, autocorrelation, hot/cold spots, floor)
+├── code_6_wvi_perception_inference_analytics.ipynb  # Inference modelling (built-environment → perception), VIF, SHAP
+├── code_7_wvi_perception_design_mapping.ipynb       # Window-view-driven urban design-support mapping
+├── assets/                                          # Logos and abstract figure
 ├── data/
-│   ├── data.csv                                    # Scores + geospatial features + Hexagon/Complex ID
-│   ├── data_final_rescaled.csv                     # Rescaled (0–5, top 5% capped) for analytics
-│   ├── metadata/complex_id_map.csv                 # Lon/Lat → Complex_ID lookup
+│   ├── data.csv                                     # Scores + geospatial features + Hexagon/Complex ID
+│   ├── data_final_rescaled.csv                      # Rescaled (0–5, top 5% capped) for analytics
+│   ├── metadata/                                    # Lon/Lat → Hexagon_ID / Complex_ID lookups
 │   ├── perception_survey/
-│   │   ├── raw/{dimension}.csv                     # Pairwise comparisons (input to Code 1)
-│   │   └── ranked/ranked_{dimension}.csv           # TrueSkill ratings (written by Code 1)
+│   │   ├── raw/{dimension}.csv                      # Pairwise comparisons (input to Code 1)
+│   │   └── ranked/ranked_{dimension}.csv            # TrueSkill ratings (written by Code 1)
 │   ├── training_features/
-│   │   ├── Features.csv                            # Training visual + structural features (Code 2)
-│   │   ├── TrainingFeatures_{dimension}.csv        # Features + TrueSkill score (Code 1 → Code 3)
-│   │   └── kfold_splits/                           # Frozen 5-fold splits (optional; see README there)
-│   ├── inference_features/Features.csv             # City-scale visual features (Code 2)
-│   ├── inference_predictions/predictions_{dim}.csv # Per-dimension city-scale predictions (Code 3)
-│   ├── training_images/                            # 499 training WVIs (local; not in git)
-│   │   └── WVI_Original/ | WVI_Segmentation/ | WVI_Processed/
-│   └── inference_images/                           # City-scale WVIs (local; not in git)
-│       └── WVI_Original/ | WVI_Segmentation/ | WVI_Processed/
-├── figures/                                        # Generated figures (PNG/SVG)
-└── model_outputs/                                  # Metrics, CV summaries, training logs (Code 3)
+│   │   ├── Features.csv                             # Training visual + structural features (Code 2)
+│   │   ├── TrainingFeatures_{dimension}.csv         # Features + TrueSkill score (Code 1 → Code 3)
+│   │   ├── kfold_splits/                            # Frozen 5-fold splits (random stratified)
+│   │   └── kfold_splits_spatial/                    # Frozen 5-fold splits (spatial block; primary)
+│   ├── inference_features/Features.csv              # City-scale visual features (Code 2)
+│   ├── training_images/  | inference_images/        # WVIs — hosted on Hugging Face (see below), not in git
+│   │   └── WVI_Processed/ | WVI_Segmentation/       # (WVI_Original raw images are NOT redistributed)
+├── figures/                                         # Generated figures (PNG/SVG)
+└── model_outputs/                                   # CV / ablation metrics (CSV); trained weights (*.pth) hosted on Hugging Face
 ```
 
 **Perception dimensions** (used consistently across notebooks): `prefer`, `monotonous`, `quiet`, `extensive`, `vivid`, `oppressive`.
+
+> **Images and trained weights** are hosted on the companion Hugging Face dataset — [`sijiey/City-Landscape-In-Sight`](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight) — because of their size. The **raw** window view images (`WVI_Original`) are **not** redistributed owing to real-estate-platform licensing; the processing scripts in Code 2 regenerate the processed imagery from source.
 
 ## Usage
 
@@ -78,13 +79,16 @@ Each `.ipynb` notebook can be run independently. For a full reproduction, run th
 | Step | Notebook | Role |
 |------|----------|------|
 | 1 | `code_1_wvi_perception_survey_results.ipynb` | Load pairwise records from `raw/`, run TrueSkill, write `ranked/` and `TrainingFeatures_*.csv` |
-| 2 | `code_2_wvi_preprocess_visual_features.ipynb` | Pre-process images and extract color features for training and inference sets |
-| 3 | `code_3_wvi_dataset_sampling.ipynb` | Assign `Hexagon_ID` and `Complex_ID` to `data/data.csv` |
-| 4 | `code_4_wvi_perception_data_analytics.ipynb` | Distribution, clustering, spatial autocorrelation, and hot-spot analysis |
-| 5 | `code_5_wvi_perception_model_train_predict.ipynb` | Train ResNet-50 + feature regression, K-fold benchmark, city-scale inference |
-| 6 | `code_6_wvi_perception_inference_analytics.ipynb` | Benchmark classical regressors against the deep model (test R² / RMSE per dimension) |
+| 2 | `code_2_wvi_preprocess_visual_features.ipynb` | Pre-process images and extract colour/semantic features for training and inference sets |
+| 3 | `code_3_wvi_dataset_sampling.ipynb` | Assign `Hexagon_ID` and `Complex_ID`; build nested spatial units and K-fold splits |
+| 4 | `code_4_wvi_perception_model_train_predict.ipynb` | Train ResNet-50 + tabular regression; spatial-block 5-fold CV; citywide inference on 12,334 WVIs |
+| 5 | `code_5_wvi_perception_data_analytics.ipynb` | Distribution, clustering, spatial autocorrelation, hot/cold-spot, and floor-level analysis |
+| 6 | `code_6_wvi_perception_inference_analytics.ipynb` | Inference modelling (built-environment → perception): regressor benchmark, VIF, SHAP |
+| 7 | `code_7_wvi_perception_design_mapping.ipynb` | Window-view-perception-driven urban design-support mapping |
 
-**Suggested path after Code 2:** Code 1 (labels) → Code 5 → Code 3 → Code 4/6.
+**Suggested path after Code 2:** Code 1 (labels) → Code 3 (splits) → Code 4 (train + predict) → Code 5 / 6 / 7 (analytics, inference, mapping).
+
+> **Citywide maps note:** the perception surfaces are produced by a *single retained model per dimension* — the best-performing spatial-block fold checkpoint applied to all 12,334 WVIs — not by aggregating cross-validated predictions or retraining on all labelled samples. The 5-fold spatial CV is used only to estimate out-of-sample accuracy.
 
 ### Requirements
 
@@ -102,7 +106,7 @@ Code 2 invokes helper scripts under `scripts/` when run locally (`masked.py`, `m
 
 ### Model checkpoints
 
-Training writes `model_outputs/best_model_{dimension}.pth` (~94 MB each). These files are listed in `.gitignore` because of GitHub size limits; **re-run Code 3** to regenerate them, or use weights from the paper’s data release if provided separately.
+Training (Code 4) writes `model_outputs/kfold_spatial/best_model_{dimension}.pth` (and `kfold_random/`, ~94 MB each). These weights are excluded from git because of GitHub size limits and are instead hosted on the [Hugging Face dataset](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight) under `model_outputs/`. You can either download them from there or **re-run Code 4** to regenerate them.
 
 ## Data
 
@@ -115,8 +119,18 @@ Training writes `model_outputs/best_model_{dimension}.pth` (~94 MB each). These 
 | `data/training_features/Features.csv` | Training-set visual features |
 | `data/inference_features/Features.csv` | City-scale inference visual features |
 | `data/training_features/TrainingFeatures_{dimension}.csv` | Features merged with TrueSkill scores for training |
-| `data/inference_predictions/predictions_{dimension}.csv` | City-scale model outputs |
-| `data/training_images/WVI_Processed/` | 256 px masked + cropped training images |
+| `data/data.csv` / `data_final_rescaled.csv` | Citywide predicted perception scores per WVI (regenerated by Code 4) |
+| `data/training_images/WVI_Processed/`, `WVI_Segmentation/` | Processed (256 px) training images + masks — **on Hugging Face** |
+| `data/inference_images/WVI_Processed.zip` | Processed citywide WVIs (12,334; zipped) — **on Hugging Face** |
+| `model_outputs/**/best_model_{dimension}.pth` | Trained weights — **on Hugging Face** |
+
+## Data and model availability
+
+To support reproducibility, the project is released across two repositories:
+
+- **Code repository (this GitHub repo)** — the full pipeline (Code 1–7) and pre-processing scripts; the image-derived **feature tables** (training and citywide); the nested **H3 spatial units** (`metadata/`) and **cross-validation fold assignments**; and the **anonymised perception data** (pairwise responses, TrueSkill scores, and citywide predicted scores).
+- **Dataset repository on Hugging Face** — [`sijiey/City-Landscape-In-Sight`](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight) — the larger binary artefacts: the **processed window view images** (499 surveyed as individual files + masks; the 12,334 citywide as `inference_images/WVI_Processed.zip`) and the **trained model weights** for all six perceptual dimensions.
+- **Not redistributed** — the **raw** window view images (`WVI_Original`) obtained from the listing platform, owing to platform licensing restrictions. The Code 2 processing scripts regenerate the processed imagery from source.
 
 ## License
 
