@@ -16,6 +16,7 @@
 
 <div align="center">
 
+[![Paper](https://img.shields.io/badge/Landscape%20%26%20Urban%20Planning-105734-green.svg)](https://doi.org/10.1016/j.landurbplan.2026.105734)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.15198-b31b1b.svg)](https://arxiv.org/abs/2606.15198)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/sijiey/City-Landscape-In-Sight)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -138,16 +139,17 @@ To support reproducibility, the project is released across two repositories:
 
 If you use this code, data, or models, please cite:
 
-Peng, C., Yang, S., Liu, A., Xiang, Y., Zhou, Z., & Biljecki, F. (2026). *City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery.* arXiv:2606.15198. https://arxiv.org/abs/2606.15198
+Peng C, Yang S, Liu A, Xiang Y, Zhou Z, Biljecki F (2026): City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery. *Landscape and Urban Planning* 275: 105734. https://doi.org/10.1016/j.landurbplan.2026.105734
 
 ```bibtex
 @article{peng2026citylandscape,
-  title        = {City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery},
-  author       = {Peng, Chucai and Yang, Sijie and Liu, Ang and Xiang, Yang and Zhou, Zhixiang and Biljecki, Filip},
-  journal      = {arXiv preprint arXiv:2606.15198},
-  year         = {2026},
-  doi          = {10.48550/arXiv.2606.15198},
-  url          = {https://arxiv.org/abs/2606.15198}
+	author = {Peng, Chucai and Yang, Sijie and Liu, Ang and Xiang, Yang and Zhou, Zhixiang and Biljecki, Filip},
+	doi = {10.1016/j.landurbplan.2026.105734},
+	journal = {Landscape and Urban Planning},
+	pages = {105734},
+	title = {City landscape in sight: A crowdsourced framework for unlocking urban-scale window view perceptions from real estate imagery},
+	volume = {275},
+	year = {2026}
 }
 ```
 
